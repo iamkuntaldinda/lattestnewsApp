@@ -7,7 +7,7 @@ from newsapi import NewsApiClient
 # Create your views here. 
 def index(request): 
 	
-	newsapi = NewsApiClient(api_key ='d54ce7e3ccbe420494db9eda882bb2ab') 
+	newsapi = NewsApiClient(api_key ='YourAPIKey') 
 	top = newsapi.get_top_headlines(sources ='techcrunch') 
 
 	l = top['articles'] 
